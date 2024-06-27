@@ -1,7 +1,7 @@
 import React from 'react';
 const Team = () => {
   return (
-    <div className={'bg-white flex flex-col items-center gap-32 p-32'}>
+    <div id={"team"} className={'bg-white flex flex-col items-center gap-32 p-32'}>
       <p className={'text-8xl font-bold uppercase text-cBlack'}>Наша команда</p>
       <div className={'grid w-full grid-cols-5 gap-10'}>
         <div className={'flex w-full flex-col gap-12 items-center'}>
