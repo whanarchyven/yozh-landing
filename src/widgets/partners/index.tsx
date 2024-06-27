@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Index: FC = () => {
   return (
-    <div className={'bg-cYellow p-32'}>
+    <div id={"partners"} className={'bg-cYellow p-32'}>
       <div className={'flex w-full gap-96 items-end'}>
         <img className={'w-1/2'} src={'/images/partners/title.svg'} />
         <motion.div
