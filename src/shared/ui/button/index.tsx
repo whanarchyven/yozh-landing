@@ -1,0 +1,27 @@
+'use client';
+import { FC, ReactNode } from 'react';
+import clsx from 'clsx';
+
+interface ButtonInterface {
+  children: ReactNode;
+  callback?: () => any;
+  className?: string;
+}
+
+const Button: FC<ButtonInterface> = ({ children, callback, className }) => {
+  return (
+    <div
+      onClick={() => {
+        callback ? callback() : null;
+      }}
+      className={clsx(
+        'bg-cYellow p-3 px-6 flex items-center font-bold justify-center text-cBlack uppercase text-2xl',
+        className,
+        callback ? 'cursor-pointer' : ''
+      )}>
+      {children}
+    </div>
+  );
+};
+
+export default Button;
