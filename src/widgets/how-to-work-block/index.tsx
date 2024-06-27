@@ -51,7 +51,7 @@ const HowToWorkBlock: FC = () => {
     }
   };
   return (
-    <div className={'relative bg-white'}>
+    <div id={"howtowork"} className={'relative bg-white'}>
       <div className={'pl-32 pt-32'}>
         <div
           className={
