@@ -11,7 +11,7 @@ import Asset from '@@/public/images/about/asset.svg';
 import { motion } from 'framer-motion';
 const AboutBlock: FC = () => {
   return (
-    <div className={'bg-cYellow overflow-hidden relative'}>
+    <div id={"about"} className={'bg-cYellow overflow-hidden relative'}>
       <div className={'p-60'}>
         <Title className={'w-[700px]'} />
         <div className={'relative w-full flex flex-col items-center gap-3'}>
