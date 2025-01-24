@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 
 const Index: FC = () => {
   return (
-    <div id={"partners"} className={'bg-cYellow p-32'}>
+    <div id={'partners'} className={'bg-cYellow lg:p-32 p-8'}>
       <div className={'flex w-full gap-96 items-end'}>
-        <img className={'w-1/2'} src={'/images/partners/title.svg'} />
+        <img className={'lg:w-1/2'} src={'/images/partners/title.svg'} />
         <motion.div
           className={'w-60 '}
           animate={{ rotate: '360deg' }}
@@ -20,9 +20,12 @@ const Index: FC = () => {
           <SpinLeft className={'w-full'} />
         </motion.div>
       </div>
-      <div className={'flex pl-32 mt-32 items-center w-full gap-4'}>
-        <img className={'w-1/2'} src={'/images/partners/map.svg'} />
-        <p className={'text-4xl leading-tight '}>
+      <div
+        className={
+          'flex lg:flex-row flex-col mt-10 lg:pl-32 lg:mt-32 items-center w-full gap-4'
+        }>
+        <img className={'lg:w-1/2'} src={'/images/partners/map.svg'} />
+        <p className={'lg:text-4xl text-2xl leading-tight '}>
           Наши партнеры предлагают эксклюзивные скидки и акции для пользователей
           приложения YOZH. Воспользуйтесь купонами на разнообразные развлечения,
           такие как киносеансы, концерты и другие мероприятия. Откройте для себя

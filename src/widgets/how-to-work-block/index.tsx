@@ -51,21 +51,26 @@ const HowToWorkBlock: FC = () => {
     }
   };
   return (
-    <div id={"howtowork"} className={'relative bg-white'}>
-      <div className={'pl-32 pt-32'}>
+    <div id={'howtowork'} className={'relative bg-white'}>
+      <div className={'lg:pl-32 pl-6 py-6 pt-24 lg:pt-32'}>
         <div
           className={
             'border-cYellow flex items-center justify-center h-32 border-dashed border-l-4 '
           }>
-          <Title className={'w-1/2'} />
+          <Title className={'lg:w-1/2 w-full'} />
         </div>
         <div
           className={
-            'border-cYellow pr-32 flex items-center justify-between pl-44 pt-80 border-dashed border-l-4 '
+            'border-cYellow lg:pr-32 flex lg:flex-row flex-col lg:items-center gap-10 lg:justify-between lg:pl-44 pl-8 lg:pt-80 border-dashed border-l-4 '
           }>
-          <div className={'flex flex-col w-2/5 gap-10'}>
-            <p className={'text-7xl font-bold uppercase'}>Увидел</p>
-            <p className={'text-4xl leading-tight '}>
+          <div className={'flex lg:mt-0 mt-12 flex-col lg:w-2/5 w-full gap-10'}>
+            <p
+              className={
+                'lg:text-7xl text-4xl font-bold uppercase lg:pr-0 pr-6'
+              }>
+              Увидел
+            </p>
+            <p className={'lg:text-4xl leading-tight lg:pr-0 pr-6'}>
               Во время прогулок по городу можно встретить множество интересных
               событий и мероприятий. Это могут быть уличные концерты, ярмарки,
               спортивные соревнования или выставки. Вы можете случайно
@@ -77,28 +82,31 @@ const HowToWorkBlock: FC = () => {
             </p>
           </div>
           <img
-            className={'w-2/5'}
+            className={'lg:w-2/5 pr-6 lg:pr-0'}
             src={'/images/how-to-work/1.jpg'}
             alt="Uvidel"
           />
         </div>
         <div
           className={
-            'border-cYellow pl-44 pt-80 relative border-dashed border-l-4 '
+            'border-cYellow lg:pl-44 lg:pt-80 pl-8 relative border-dashed border-l-4 '
           }>
-          <div className="flex justify-between">
+          <div className="flex lg:flex-row flex-col gap-10 lg:justify-between">
             {/* Левый блок с текстом */}
-            <div className="w-2/5">
+            <div className="lg:w-2/5">
               <div
                 ref={(el) => (sectionsRef.current[0] = el)}
                 data-section="Сфотографировал"
                 className={
-                  'flex h-screen justify-center flex-col w-full gap-10'
+                  'flex lg:h-screen lg:mt-0 mt-12 justify-center flex-col w-full gap-10'
                 }>
-                <p className={'text-7xl font-bold uppercase'}>
+                <p
+                  className={
+                    'lg:text-7xl text-4xl font-bold uppercase lg:pr-0 pr-6'
+                  }>
                   Сфотографировал
                 </p>
-                <p className={'text-4xl leading-tight '}>
+                <p className={'lg:text-4xl leading-tight lg:pr-0 pr-6'}>
                   Запечатлейте интересные моменты и события с помощью камеры
                   вашего телефона. Будь то яркое выступление уличного артиста,
                   красивый пейзаж или любое другое интересное событие, вы можете
@@ -109,15 +117,25 @@ const HowToWorkBlock: FC = () => {
                   происходит вокруг вас. Ваши фотографии и видео помогут другим
                   людям узнать о новых местах и событиях.
                 </p>
+                <img
+                  className={'lg:w-2/5 lg:hidden'}
+                  src={'/images/how-to-work/2.png'}
+                  alt="Uvidel"
+                />
               </div>
               <div
                 ref={(el) => (sectionsRef.current[1] = el)}
                 data-section="Подписал"
                 className={
-                  'flex h-screen justify-center flex-col w-full gap-10'
+                  'flex lg:mt-0 mt-12 lg:h-screen justify-center flex-col w-full gap-10'
                 }>
-                <p className={'text-7xl font-bold uppercase'}>Подписал</p>
-                <p className={'text-4xl leading-tight '}>
+                <p
+                  className={
+                    'lg:text-7xl text-4xl font-bold uppercase lg:pr-0 pr-6'
+                  }>
+                  Подписал
+                </p>
+                <p className={'lg:text-4xl leading-tight lg:pr-0 pr-6'}>
                   Придумайте увлекательное и информативное описание к
                   происходящему событию. Расскажите другим пользователям, что
                   именно вы увидели, почему это событие интересно и почему стоит
@@ -128,15 +146,25 @@ const HowToWorkBlock: FC = () => {
                   ваши фотографии и видео. Ваши рассказы помогут создать живую и
                   увлекательную хронику городской жизни.
                 </p>
+                <img
+                  className={'lg:w-2/5 lg:hidden'}
+                  src={'/images/how-to-work/3.png'}
+                  alt="Uvidel"
+                />
               </div>
               <div
                 ref={(el) => (sectionsRef.current[2] = el)}
                 data-section="Ищи рядом"
                 className={
-                  'flex h-screen justify-center flex-col w-full gap-10'
+                  'flex lg:h-screen lg:mt-0 mt-12 justify-center flex-col w-full gap-10'
                 }>
-                <p className={'text-7xl font-bold uppercase'}>Ищи рядом</p>
-                <p className={'text-4xl leading-tight '}>
+                <p
+                  className={
+                    'lg:text-7xl text-4xl font-bold uppercase lg:pr-0 pr-6'
+                  }>
+                  Ищи рядом
+                </p>
+                <p className={'lg:text-4xl leading-tight lg:pr-0 pr-6'}>
                   Ищите &quot;события&quot; других пользователей на
                   интерактивной карте и будьте всегда в курсе того, что
                   происходит вокруг. С помощью функции поиска вы можете легко
@@ -148,11 +176,16 @@ const HowToWorkBlock: FC = () => {
                   другими пользователями. Это отличная возможность узнать о
                   самых интересных и уникальных событиях в вашем городе.
                 </p>
+                <img
+                  className={'lg:w-2/5 lg:hidden'}
+                  src={'/images/how-to-work/4.png'}
+                  alt="Uvidel"
+                />
               </div>
             </div>
 
             {/* Правый блок с телефоном */}
-            <div className="w-1/2 h-screen sticky top-28 flex items-center justify-center">
+            <div className="w-1/2 h-screen sticky top-28 hidden lg:flex items-center justify-center">
               <img
                 src="/images/how-to-work/asset.svg"
                 alt="Phone"

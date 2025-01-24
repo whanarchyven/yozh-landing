@@ -59,7 +59,7 @@ export default function RootLayout({ children, ...rest }: RootLayoutProps) {
       <body className={clsx(Zhizn.variable, Manrope.variable)}>
         <ReduxProvider {...rest}>
           <SmoothScroll>
-            <div className={'relative'} id="app">
+            <div className={'relative overflow-x-clip'} id="app">
               <Navbar />
               {children}
             </div>

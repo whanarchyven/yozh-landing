@@ -1,9 +1,9 @@
 import React from 'react';
 const TourRoutes = () => {
   return (
-    <div className={'bg-cYellow flex flex-col items-center gap-32 p-96'}>
-      <img className={'w-[1200px]'} src={'/images/tour-routes/title.svg'} />
-      <div className={'grid w-[1200px] grid-cols-3 gap-44'}>
+    <div className={'bg-cYellow flex flex-col items-center p-8 gap-32 lg:p-96'}>
+      <img className={'lg:w-[1200px]'} src={'/images/tour-routes/title.svg'} />
+      <div className={'grid lg:w-[1200px] lg:grid-cols-3 gap-44'}>
         <div className={'flex w-full flex-col gap-12 items-center'}>
           <img className={'w-full'} src={'/images/tour-routes/1.png'} />
           <p className={'text-5xl font-bold'}>Прогулки</p>

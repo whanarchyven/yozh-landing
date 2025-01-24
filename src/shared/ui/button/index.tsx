@@ -1,6 +1,7 @@
 'use client';
 import { FC, ReactNode } from 'react';
 import clsx from 'clsx';
+import Link from 'next/link';
 
 interface ButtonInterface {
   children: ReactNode;
@@ -10,7 +11,8 @@ interface ButtonInterface {
 
 const Button: FC<ButtonInterface> = ({ children, callback, className }) => {
   return (
-    <div
+    <Link
+      href={'https://app.yozh.fun'}
       onClick={() => {
         callback ? callback() : null;
       }}
@@ -20,7 +22,7 @@ const Button: FC<ButtonInterface> = ({ children, callback, className }) => {
         callback ? 'cursor-pointer' : ''
       )}>
       {children}
-    </div>
+    </Link>
   );
 };
 

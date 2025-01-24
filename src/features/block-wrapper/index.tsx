@@ -19,11 +19,11 @@ const cvaAsset = cva([], {
 });
 const BlockWrapper: FC<BlockWrapperInterface> = ({ color }) => {
   return (
-    <div className={'w-full flex flex-col items-center'}>
+    <div className={'w-full hidden lg:flex flex-col items-center'}>
       {color == 'yellow' ? (
-        <Dashed className={clsx('-mb-64')} />
+        <Dashed className={clsx(' lg:-mb-64')} />
       ) : (
-        <DashedWhite className={clsx('-mb-64')} />
+        <DashedWhite className={clsx(' lg:-mb-64')} />
       )}
       <Filled className={cvaAsset({ color })} />
     </div>

@@ -5,14 +5,40 @@ import SpinLeft from '@@/public/images/main-block-assets/spin_left.svg';
 import StarLeft from '@@/public/images/main-block-assets/star_left.svg';
 import StarRight from '@@/public/images/main-block-assets/star_right.svg';
 import { motion } from 'framer-motion';
+import Logo from '@@/public/images/logo.svg';
 
 const MainBlock: FC = () => {
   return (
     <div
       className={
-        'relative overflow-hidden flex min-h-screen flex-col p-14 justify-end items-center'
+        'relative overflow-hidden flex h-screen flex-col lg:p-14 justify-between lg:gap-0 gap-12 px-10 pt-52 lg:justify-end items-center'
       }>
-      <div className={'w-5/6 flex items-center relative justify-start'}>
+      <div className={'flex lg:hidden flex-col gap-8 items-center'}>
+        <Logo className={'w-80'} />
+        <p className={'font-base font-semibold text-center text-4xl'}>
+          Мобильное приложение
+          <br /> актуальных событий
+        </p>
+        <p className={'font-base font-medium text-center text-xl'}>
+          * Проект создан при поддержке Федерального государственного бюджетного
+          учреждения &quot;Фонд содействия развитию малых форм предприятий в
+          научно-технической сфере в рамках программы &quot;Студенческий
+          стартап&quot; федерального проекта &quot;Платформа университетского
+          технологического предпринимательства
+        </p>
+      </div>
+      <img
+        className={'lg:hidden flex-1'}
+        src={'/images/main-block-assets/mock_mobile.png'}
+      />
+      <Button
+        className={
+          'absolute text-3xl p-8 flex lg:hidden self-center bottom-12'
+        }>
+        ПРИСОЕДИНИТЬСЯ К БЕТА-ТЕСТУ
+      </Button>
+      <div
+        className={'w-5/6 lg:flex hidden items-center relative justify-start'}>
         <img className={'w-full'} src={'images/main_image.png'} />
         <Button
           className={
@@ -21,15 +47,24 @@ const MainBlock: FC = () => {
           ПРИСОЕДИНИТЬСЯ К БЕТА-ТЕСТУ
         </Button>
       </div>
-      <div className={'flex -mt-64 w-4/6 relative items-center gap-32'}>
+      <div
+        className={'lg:flex hidden -mt-64 w-4/6 relative items-center gap-32'}>
         <p className={'font-base font-semibold text-6xl'}>
           Мобильное <br /> приложение
           <br /> актуальных событий
         </p>
-        <p className={'font-secondary font-semibold text-[20rem]'}>YOZH</p>
+        <Logo className={'w-60 lg:w-[400px]'} />
+        {/*<p className={'font-secondary font-semibold text-[20rem]'}>YOZH</p>*/}
       </div>
+      <p className={'font-base font-medium text-center text-3xl w-2/3'}>
+        * Проект создан при поддержке Федерального государственного бюджетного
+        учреждения &quot;Фонд содействия развитию малых форм предприятий в
+        научно-технической сфере в рамках программы &quot;Студенческий
+        стартап&quot; федерального проекта &quot;Платформа университетского
+        технологического предпринимательства
+      </p>
       <motion.div
-        className={'w-44 absolute -left-10 top-52'}
+        className={'w-44 absolute lg:flex hidden -left-10 top-52'}
         animate={{ rotate: '-360deg' }}
         transition={{
           repeat: Infinity,
@@ -40,7 +75,7 @@ const MainBlock: FC = () => {
         <SpinLeft className={'w-full'} />
       </motion.div>
       <motion.div
-        className={'w-44 absolute -right-10 bottom-52'}
+        className={'w-44 absolute lg:flex hidden -right-10 bottom-52'}
         animate={{ rotate: '360deg' }}
         transition={{
           repeat: Infinity,
@@ -51,7 +86,7 @@ const MainBlock: FC = () => {
         <SpinLeft className={'w-full'} />
       </motion.div>
       <motion.div
-        className={'w-32 absolute -left-4 bottom-10'}
+        className={'w-32 absolute lg:flex hidden -left-4 bottom-10'}
         initial={{ scale: 1 }}
         animate={{ scale: 2 }}
         transition={{
@@ -63,7 +98,7 @@ const MainBlock: FC = () => {
         <StarLeft className={'w-full'} />
       </motion.div>
       <motion.div
-        className={'w-80 absolute right-14 top-60'}
+        className={'w-80 absolute lg:flex hidden right-14 top-60'}
         initial={{ scale: 1 }}
         animate={{ scale: 2 }}
         transition={{
