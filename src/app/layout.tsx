@@ -35,9 +35,8 @@ const Manrope = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'YOZH',
-  description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, et',
+  title: 'yozh - мобильное приложение актуальных событий',
+  description: 'Будь в курсе событий города!',
 };
 
 interface RootLayoutProps {
