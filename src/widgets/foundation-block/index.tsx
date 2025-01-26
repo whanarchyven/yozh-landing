@@ -1,7 +1,7 @@
 'use client';
 import { FC } from 'react';
 
-const MainBlock: FC = () => {
+const FoundationBlock: FC = () => {
   return (
     <div
       className={
@@ -19,4 +19,4 @@ const MainBlock: FC = () => {
   );
 };
 
-export default MainBlock;
+export default FoundationBlock;
